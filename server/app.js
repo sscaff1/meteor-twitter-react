@@ -12,7 +12,7 @@ Meteor.publish('tweets', function() {
   if (self.userId) {
     try {
       const twitterId = Meteor.users.findOne(self.userId).services.twitter.id;
-      var stream = T.stream('statuses/filter', { track: 'pitbull' });
+      var stream = T.stream('user', { user_id: twitterId });
       stream.on('tweet', function(tweet) {
         self.added('tweets', Random.id(), tweet);
       });
