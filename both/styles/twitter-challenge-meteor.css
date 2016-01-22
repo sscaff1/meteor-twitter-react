@@ -1,0 +1,56 @@
+/* CSS declarations go here */
+#login-buttons {
+  position: absolute;
+  top:10px;
+  right:10px;
+}
+.container {
+  display: block;
+  padding:0 15px;
+}
+
+.tweet-list {
+  list-style-type: none;
+  padding:0;
+}
+.like-button {
+  float:left;
+  margin-right:20px;
+}
+
+.tweet-list .single-tweet {
+  padding:10px;
+  background: #FAFAFA;
+  margin: 10px 0;
+  border: 1px solid black;
+  border-radius: 5px;
+  width:75%;
+}
+
+.tweet-enter {
+  opacity: 0.01;
+  -ms-transition: opacity .25s ease-in; /* IE 9 */
+  -webkit-transition: opacity .25s ease-in; /* Chrome, Safari, Opera */
+  transition: opacity .25s ease-in;
+}
+
+.tweet-enter.tweet-enter-active {
+  opacity: 1;
+  -ms-transition: opacity .25s ease-in; /* IE 9 */
+  -webkit-transition: opacity .25s ease-in; /* Chrome, Safari, Opera */
+  transition: opacity .25s ease-in;
+}
+
+.tweet-leave {
+  opacity: 1;
+  -ms-transition: opacity .025s ease-out; /* IE 9 */
+  -webkit-transition: opacity .025s ease-out; /* Chrome, Safari, Opera */
+  transition: opacity .025s ease-out;
+}
+
+.tweet-leave.tweet-leave-active {
+  opacity: 0.01;
+  -ms-transition: opacity .025s ease-out; /* IE 9 */
+  -webkit-transition: opacity .025s ease-out; /* Chrome, Safari, Opera */
+  transition: opacity .025s ease-out;
+}
