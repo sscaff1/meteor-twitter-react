@@ -6,3 +6,5 @@ Simple Meteor App that displays posts from Twitter and renders everything in Rea
 - Like Statuses
 
 Uses the [Twit NPM package](https://github.com/ttezel/twit). I didn't put much effort into styling. Did it as an exercise to demonstrate what can be done with Meteor.
+
+Demo Live at [twit-meteor.meteor.com/](http://twit-meteor.meteor.com)
