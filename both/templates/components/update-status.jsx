@@ -1,5 +1,5 @@
 UpdateStatus = React.createClass({
-  updateStatus() {
+  updateStatus(event) {
     event.preventDefault();
     var status = ReactDOM.findDOMNode(this.refs.newStatus).value.trim();
     Meteor.call('updateStatus', status);

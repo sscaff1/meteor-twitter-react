@@ -1,5 +1,6 @@
 Comments = React.createClass({
-  submitComment() {
+  submitComment(event) {
+    event.preventDefault();
     var comment = ReactDOM.findDOMNode(this.refs.comment).value.trim();
     this.props.postComment(comment);
   },

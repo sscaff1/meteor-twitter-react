@@ -2,7 +2,8 @@ Tweet = React.createClass({
   postComment(comment) {
     Meteor.call('submitComment', comment, this.props.tweetId);
   },
-  likeTweet() {
+  likeTweet(event) {
+    event.preventDefault();
     Meteor.call('likeTweet', this.props.tweetId);
   },
   render() {
